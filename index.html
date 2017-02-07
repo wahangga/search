@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#fc7171;">
+<div class="customIcon">
+    <img src="img/bc.png" style=" height: 200px; width: 200px;">
+</div>
+<div class="box">
+    <div class="container-4">
+        <input type="search" id="search" placeholder="Cari..." />
+        <button class="icon" onclick="btnSearch()"><i class="fa fa-search"></i></button>
+</div>
+</div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    function btnSearch() {
+        alert("hayoo ini apa hayiiyooo : " + document.getElementById("search").value);
+        window.location.href = "result.html";
+    }
+</script>

@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/smartadmin-production.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <div>
+
+        <div class="col-sm-12">
+            <br>
+            <div>
+                <h1 class="customFont">Hasil Pencarian</h1>
+            </div>
+            <br>
+            <div>
+                <div class="input-group input-group-lg">
+                    <input class="form-control input-lg" type="text" placeholder="Cari lagi..." id="search-user">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-default" onclick="btnSearch()">
+							<i class="fa fa-fw fa-search fa-lg"></i>
+						</button>
+                    </div>
+                </div>
+                <h1 class="font-md"> Hasil pencarian untuk <span class="semi-bold">User</span><small class="text-danger"> &nbsp;&nbsp;(10 results)</small></h1>
+                <br>
+                <div class="table-responsive">
+
+                    <table id="resultTable" class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                          
+<th>Nama Depan</th>
+<th>Nama Belakang</th>
+<th>Tanggal Lahir</th>
+<th>Email / Username</th>
+<th>Kota</th>
+<th>Kode Pos</th>
+<th>No Telepon</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+
+    <tr>
+        <td>I Gusti Agung Ngurah</td>
+        <td>Anggawijaya</td>
+        <td>24-03-1992</td>
+        <td>ngurah.anggawijaya@gmail.com <a href="javascript:void(0);" class="pull-right"><i class="fa fa-key"></i></a></td>
+        <td>Denpasar</td>
+        <td>80232</td>
+        <td>08980122015</td>
+        <td><span class="label label-success">Active</span></td>
+    </tr>
+    <tr>
+        <td>Anna</td>
+        <td>Meeks</td>
+        <td>2007-04-05</td>
+        <td>carmel@forkform.me <a href="javascript:void(0);" class="pull-right"><i class="fa fa-key"></i></a></td>
+        <td>Holland</td>
+        <td>73490</td>
+        <td>255-757-8495
+            <td><span class="label label-success">Active</span></td>
+    </tr>
+    <tr>
+        <td>Millicent</td>
+        <td>Decker</td>
+        <td>2007-03-27</td>
+        <td>agustin.murray@babyback.me <a href="javascript:void(0);" class="pull-right"><i class="fa fa-key"></i></a></td>
+        <td>Leona</td>
+        <td>45960</td>
+        <td>207-445-7704</td>
+        <td><span class="label label-success">Active</span></td>
+    </tr>
+    <tr>
+        <td>Misty</td>
+        <td>Mcdowell</td>
+        <td>2002-12-09</td>
+        <td>mona.doreen@processproduce.edu <a href="javascript:void(0);" class="pull-right"><i class="fa fa-key"></i></a></td>
+        <td>Sweetwater</td>
+        <td>94133</td>
+        <td>707-118-9601</td>
+        <td><span class="label label-success">Active</span></td>
+    </tr>
+    <tr class="danger">
+        <td>Cleo</td>
+        <td>Blue</td>
+        <td>1993-04-30</td>
+        <td>collin@berry.info <a href="javascript:void(0);" class="pull-right"><i class="fa fa-key"></i></a></td>
+        <td>Groesbeck</td>
+        <td>12764</td>
+        <td>543-827-8732</td>
+        <td><span class="label label-danger">Disabled</span></td>
+    </tr>
+
+</tbody>
+</table>
+
+</div>
+<div class="text-center">
+    <hr>
+    <ul class="pagination no-margin">
+        <li class="prev disabled">
+            <a href="javascript:void(0);">Previous</a>
+        </li>
+        <li class="active">
+            <a href="javascript:void(0);">1</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);">2</a>
+        </li>
+        <li class="next">
+            <a href="javascript:void(0);">Next</a>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
+<script type="text/javascript">
+    function btnSearch() {
+        alert("hayoo ini apa hayiiyooo : " + document.getElementById("search-user").value);
+    }
+</script>
